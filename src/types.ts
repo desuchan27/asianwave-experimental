@@ -16,7 +16,11 @@ export interface Product {
     name: string
     price: string
     isFeatured: boolean
-    variantOptions: Variant[]
+    variant: {
+        id: string;
+        name: string;
+        options: string[];
+    }[]
     images: Image[]
 }
 
@@ -25,8 +29,3 @@ export interface Image {
     url: string
 }
 
-export interface Variant {
-    id: string
-    name: string
-    optionValues: string[]
-}
