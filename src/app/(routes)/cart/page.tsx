@@ -4,6 +4,7 @@ import Container from '@/components/ui/Container'
 import useCart from '@/hooks/useCart'
 import { useState } from 'react'
 import CartItem from './components/CartItem'
+import Summary from './components/Summary'
 
 
 
@@ -23,7 +24,7 @@ const Page = ({
           <div className='mt-12 lg:grid lg:grid-cols-12 lg:items-start '>
             <div className='col-span-7'>
               {cart.items.length === 0 && <p
-              className='text-neutral-500'>No items added cart</p>}
+                className='text-neutral-500'>No items added cart</p>}
               <ul>
                 {cart.items.map((item) => (
                   <CartItem
@@ -33,6 +34,7 @@ const Page = ({
                 ))}
               </ul>
             </div>
+            <Summary />
           </div>
         </div>
       </Container>

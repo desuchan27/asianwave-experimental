@@ -31,7 +31,7 @@ const Info: FC<InfoProps> = ({
                     <div>
                         {data?.variant?.options?.map((option, index) => (
                             <Button
-                                className='outline outline-1 outline-slate-950 text-slate-950 mr-4 text-sm rounded-none font-light'
+                                className='bg-white outline outline-1 outline-slate-950 text-slate-950 mr-4 text-sm rounded-none font-light'
                                 key={index}
                                 onClick={() => console.log(option)}
                             >

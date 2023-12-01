@@ -25,7 +25,7 @@ const NavbarActions: FC<NavbarActionsProps> = ({ }) => {
 
     return (
         <div className='ml-auto flex items-center gap-x-4'>
-            <button
+            <Button
                 onClick={() => router.push('/cart')}
                 className='flex items-center rounded-full bg-black px-4 py-2'
             >
@@ -38,7 +38,7 @@ const NavbarActions: FC<NavbarActionsProps> = ({ }) => {
                 >
                     {cart.items.length}
                 </span>
-            </button>
+            </Button>
         </div>
     )
 }
