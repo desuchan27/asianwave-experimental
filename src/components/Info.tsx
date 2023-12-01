@@ -29,10 +29,10 @@ const Info: FC<InfoProps> = ({
                 <div className="flex flex-col gap-y-6">
                     <h3 className='font-semibold text-black'>Variants: </h3>
                     <div>
-                        {data.variant.options.map((option, index) => (
-                            <Button 
+                        {data?.variant?.options?.map((option, index) => (
+                            <Button
                                 className='outline outline-1 outline-slate-950 text-slate-950 mr-4 text-sm rounded-none font-light'
-                                key={index} 
+                                key={index}
                                 onClick={() => console.log(option)}
                             >
                                 {option}
@@ -41,12 +41,12 @@ const Info: FC<InfoProps> = ({
                     </div>
                 </div>
             </div>
-                <div className="mt-10 flex items-center gap-x-3">
-                    <Button className='flex bg-black items-center gap-x-2'>
-                        Add to cart
-                        <ShoppingCart />
-                    </Button>
-                </div>
+            <div className="mt-10 flex items-center gap-x-3">
+                <Button className='flex bg-black items-center gap-x-2'>
+                    Add to cart
+                    <ShoppingCart />
+                </Button>
+            </div>
 
         </div>
     )
